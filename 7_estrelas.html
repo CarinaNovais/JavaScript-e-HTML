@@ -1,0 +1,19 @@
+<!-- modulo 07 -->
+<script>
+    function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+// repetiçoes alinhadas
+
+for(var linha = 1; linha <=3; linha++){
+    for(var coluna = 1; coluna <= 10; coluna++){
+        document.write("*")
+    }
+    pulaLinha();
+}
+</script>

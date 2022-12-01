@@ -1,0 +1,66 @@
+<!-- Estrutura Minima -->
+<!-- Modulo 03, 04 -->
+<meta charset="UTF-8">
+
+<!-- Para escrever javascript -->
+
+<script>
+    //alert("O alert recebe um parâmetro. O parâmetro é o que está entre as aspas");
+
+    //Texto dinamico, mandando do javascript para o html 
+    document.write("A minha idade é");
+    document.write("<br>");
+    document.write("19 anos <br>");
+    document.write(17 * 3)
+    document.write("<br> Isso é uma concatenação -> " + "20" +"22");
+    document.write("<br> Média de 10 + 34 + 40 + 20 = ");
+    document.write((10 + 34 + 40 + 20)/4);
+
+
+    //lidando com variaveis
+    var ano = 2022
+    document.write("<br> Maria tem " + (ano - 2017) + " anos"); 
+
+    var media = (10+30+45)/3
+    document.write("<br>A média é:"+ Math.round(media));
+    
+
+    //funções 
+    function pulaLinha2(){
+       document.write("<br>")
+   }
+    pulaLinha2();
+    document.write("teste1");
+    pulaLinha2();
+    document.write("teste2");
+
+    function mostra2(frase){
+        document.write(frase);
+        pulaLinha2();
+   }
+
+    pulaLinha2();
+    mostra2("Meu nome é carina");
+
+
+    //
+    //Exercicios extras
+    function pulaLinha() {
+        // pulando duas linhas
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+    pulaLinha();
+    var ano = 2019;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+
+
+</script>
+
+

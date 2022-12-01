@@ -1,0 +1,43 @@
+<!-- Modulo 5 -->
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+
+function calculaImc(pesoPessoa, alturaPessoa){
+    var imc = pesoPessoa / (alturaPessoa * alturaPessoa);
+    return imc;
+}
+
+var imcPessoa = calculaImc(73, 1.71);
+var imcAmigo = calculaImc(73, 1.71);
+var imcTotal = imcPessoa + imcAmigo;
+
+mostra("O imc é: " + imcPessoa);
+mostra("O imc do seu amigo é: " + imcAmigo);
+mostra("A soma dos imc's é: " + imcTotal);
+
+// Interagindo com o Usuario
+var nome = prompt("Qual seu nome? ");
+var altura = prompt(nome + ",informe sua altura: ");
+var peso = prompt(nome + ",informe seu peso: ");
+var imc = calculaImc(peso, altura);
+mostra(nome + ", seu imc é = " + imc);
+
+if(imc < 18.5){
+    mostra("Voce está abaixo do recomendado!!")
+}
+else if (18.6 >= imc <= 24.9 ){
+    mostra("Voce está no peso recomendado.Parabens");
+}
+else if(25.0 >= imc <= 29.9){
+    mostra("Voce esta acima do recomendado");
+}
+</script>

@@ -1,0 +1,43 @@
+<!-- modulo 07 -->
+<script>
+ function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+
+
+var qtdFamiliares = parseInt(prompt("Quantidade de familiares: "));
+var i = 1;
+var totalIdades = 0;
+
+while(i <= qtdFamiliares){
+    var idade = parseInt(prompt("Informe idade do familiar: "));
+    totalIdades = totalIdades + idade;
+    i++;
+}
+var mediaIdade = totalIdades/qtdFamiliares;
+mostra("A média das idades dos familaires é: " + mediaIdade);
+mostra("FIMM");
+
+</script>
+
+
+<!-- exercicio -->
+<script>
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+    var contador = 1;
+    var totalGastoComEventos = 0;
+
+    while(contador <= totalDeEventos) {
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+    mostra("A média de gastos é " + media);
+</script>

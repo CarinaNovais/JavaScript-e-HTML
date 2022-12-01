@@ -1,0 +1,42 @@
+<!-- Modulo 6 -->
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random() * 10);
+var chute = parseInt(prompt("Digite seu chute: "));
+
+if(chute == numeroPensado){
+    mostra("Voce acertou");
+}
+else{
+    mostra("Voce errou, o numero pensado foi: "+ numeroPensado);
+}
+</script>
+
+<!-- Modulo 07 - Melhorando o exercicio -->
+<script>
+    var tentativas = 1;
+    while(tentativas <= 3){
+        var numeroPensado = Math.round(Math.random() * 10);
+        var chute = parseInt(prompt("Digite seu chute: "));
+
+        if(chute == numeroPensado){
+            mostra("Voce acertou");
+            break;
+        }
+        else{
+            mostra("Voce errou");
+        }
+        tentativas++;
+    }
+    mostra("Fim");
+</script>
